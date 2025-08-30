@@ -360,6 +360,7 @@
 
 import React, { useRef, useState } from "react";
 import SummaryView from "./SummaryView";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 export default function UploadArea() {
   const fileRef = useRef();
@@ -407,7 +408,8 @@ export default function UploadArea() {
     fd.append("length", length);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8000/api/process", true);
+    const endpoint = `${API_BASE}/api/process`;
+    xhr.open("POST", endpoint, true);
 
     xhr.upload.onprogress = function (e) {
       if (e.lengthComputable) {
