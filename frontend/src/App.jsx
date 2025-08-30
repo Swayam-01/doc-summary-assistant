@@ -319,7 +319,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        Built with ❤ — <span className="muted">React + FastAPI + Transformers</span>
+        Built by Swayam Singh — <span className="muted">React + FastAPI + Transformers</span>
       </footer>
     </div>
   );
