@@ -15,6 +15,7 @@ React frontend + FastAPI backend. This README explains, step-by-step, how to run
 ---
 
 ## Repo structure (important files)
+```
 doc-summary-assistant/
 ├─ backend/
 │ ├─ app/
@@ -35,6 +36,7 @@ doc-summary-assistant/
 │ │ └─ ThemeMenu.jsx
 │ ├─ package.json
 └─ README.md
+```
 
 
 ---
@@ -115,3 +117,4 @@ app.add_middleware(
 - For local development you do not need to install Docker or Tesseract unless you want OCR or container parity.
 - Keep track of whether your backend is using the abstractive model — it requires more disk and memory.
 - Make frequent small commits and push to GitHub; use Vercel/Render CI logs to debug production issues.
+
